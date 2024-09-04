@@ -6,10 +6,11 @@ import {
 } from './services/flags.js'
 
 export function menuInit() {
-  if (document.querySelector('.icon-menu')) {
+  if (document.getElementById('menu-btn')) {
     document.addEventListener('click', function (e) {
-      if (bodyLockStatus && e.target.closest('.icon-menu')) {
+      if (bodyLockStatus && e.target.closest('menu-btn')) {
         bodyLockToggle()
+        alert('menu')
         document.documentElement.classList.toggle('menu-open')
       }
     })
