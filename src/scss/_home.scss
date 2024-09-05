@@ -1,0 +1,65 @@
+.hero{
+    background: url(/img/AdobeStock_292645263_0.jpeg);
+    color: #fff;
+    background-size: cover;
+    height: 100%;
+    overflow: auto;
+    z-index: 2;
+    padding-bottom: 176px;
+    position: relative;
+    .shade{
+        content: '';
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+        min-height: 100%;
+    }
+    .hero__container{
+        z-index: 2;
+        position: relative;
+        display: flex;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .up-text{
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    .span{
+        font-weight: 700;
+    }
+    .title{
+        font-size: 56px;
+        font-weight: bold;
+        max-width: 803px;
+        margin-top: 24px;
+    }
+    .after{
+        margin-top: 24px;
+        font-size: 16px;
+    }
+    .text{
+        margin-top: 16px;
+        font-size: 16px;
+        max-width: 599px;
+    }
+    .read{
+        width: 205px;
+        height: 56px;
+        margin-top: 48px;
+        background-color: #FFD050;
+        border: none;
+        font-size: 17px;
+        font-weight: 700;
+    }
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 576px) {
+}
+@media screen and (max-width: 425px) {
+}
