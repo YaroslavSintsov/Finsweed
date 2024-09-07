@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .hero{
     background: url(/img/AdobeStock_292645263_0.jpeg);
     color: #fff;
@@ -55,6 +59,119 @@
         border: none;
         font-size: 17px;
         font-weight: 700;
+    }
+}
+.post{
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+    gap: 32px;
+    height: 100%;
+    align-items: start;
+    .yellow{
+        background-color: #FBF6EA;
+    }
+    .read{
+        width: 205px;
+        height: 56px;
+        margin-top: 32px;
+        background-color: #FFD050;
+        border: none;
+        font-size: 17px;
+        font-weight: 700;
+    }
+    .posts{
+        display: flex;
+    }
+    .post-left{
+        gap: 32px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .post-right{
+        display: flex;
+        width: 100%;
+        justify-content: start;
+        gap: 32px;
+        flex-direction: column-reverse;
+    }
+    .post-up{
+        display: flex;justify-content: space-between;
+        font-size: 36px;
+        font-weight: bold;
+        grid-gap: 0 20px;
+    }
+    .post-href{
+        font-size: 16px;
+        font-weight: 500;
+        color: #592EA9;
+    }
+    .big-card{
+        max-width: 669px;
+        padding: 32px;
+        outline: #c4c5ce 1px solid;
+        box-shadow: #6D6E76 -4px -4px 4px -4px;
+        img{
+            width: 669px;
+            transition: all .3s ease;
+        }
+        transition: all .4s ease;
+    }
+    .post-down{
+        display: flex;
+        gap: 55px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .big-card:hover{
+        outline: #6d6e77 1px solid;
+        box-shadow: #6D6E76 -4px -4px 4px -4px;
+        img{
+            width: 679px;
+        }
+    }
+    .hrefs{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .post-name{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .mini-cards{
+        padding: 32px;
+        padding-bottom: 10px;
+    }
+    .name-card-post{
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: 16px;
+    }
+    .data-card{
+        margin-top: 32px;
+        font-size: 14px;
+    }
+    .card-text{
+        color: #6D6E76;
+        font-size: 16px;
+        margin-top: 16px;
+    }
+}
+@media screen and (max-width: 945px) {
+    .post{
+        flex-direction: column;
+    }
+    .big-card{
+        max-width: 669px;
+        padding: 20px !important;
+        img{
+            max-width: 100%;
+        }
+        padding: 20px;
     }
 }
 @media screen and (max-width: 768px) {
