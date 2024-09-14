@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+.none{
+    display: none;
+}
 .hero{
     background: url(/img/AdobeStock_292645263_0.jpeg);
     color: #fff;
@@ -271,6 +274,7 @@
 .start{
     display: flex;
     margin-top: 128px;
+    height: 100%;
     .start-left{
         background-image: url(/img/close-up-photography-of-man-wearing-sunglasses-1212984.svg);
         width: 900px;
@@ -314,6 +318,205 @@
         color: #6D6E76;
     }
 }
+.autor{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 128px;
+    gap: 48px;
+    .title-autors{
+        font-size: 36px;
+        display: flex;
+        font-weight: 700;
+        letter-spacing: 2px;
+        justify-content: center;
+    }
+    .autor-cards{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+    .autor-card{
+        display: flex;
+        width: 296px;
+        background-color: #f4f4f4;
+        padding: 40px 0;
+        align-items: center;
+        flex-direction: column;
+    }
+    .autor-img{
+        height: 128px;
+        width: 128px;
+        border: 5px #000 solid;
+        border-radius: 100px;
+    }
+    .sot{
+        height: 16px;
+        width: 16px;
+    }
+    .autor-name{
+        margin-top: 20px;
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .autor-type{
+        font-size: 14px;
+        color: #6D6E76;
+    }
+    .tema{
+        font-size: 17px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+    .f{
+        background-color: #232536;
+        color: #F4F0F8;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        font-size: 15px;
+        border-radius: 20px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+    .i{
+        background-color: #232536;
+        color: #F4F0F8;
+        display: flex;
+        align-items: end;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        justify-content: center;
+    }
+    .sot-set{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .styles{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .style-logo{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 74px;
+            justify-content: start;
+        }
+        .top-text{
+            font-size: 14px;
+            color: #6D6E76;
+        }
+        .botom-text{
+            font-size: 24px;
+            font-weight: 600;
+            color: #6D6E76;
+        }
+    }
+    .testimonials{
+        background-color: #FBF6EA;
+        padding: 80px 111px;
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        position: relative;
+        flex-grow: 1;
+        .test-left{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            gap: 16px;
+            width: 400px;
+            flex-grow: 1;
+        }
+        .left-text{
+            font-size: 16px;
+            max-width: 320px;
+        }
+        .left-title{
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: -2px;
+            max-width: 300px;
+        }
+        .test-right{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            gap: 120px;
+            margin-left: 120px;
+        }
+        .profel{
+            display: flex;
+            gap: 16px;
+        }
+        .right-text{
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+        .test-left::after{
+            content: '';
+            width: 1px;
+            position: absolute;
+            right: 0;
+            height: 100%;
+            background-color: #6D6E76;
+            left: 220px;
+        }
+        .img{
+            height: 44px;
+            width: 44px;
+            border: 2px #000 solid;
+            border-radius: 100px;
+        }
+        .name{
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .profel-left{
+            display: flex;
+            gap: 16px;
+        }
+        .town{
+            font-size: 16px;
+            color: #6D6E76;
+            line-height: 1.5;
+        }
+    }
+    .join{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .join-title{
+            font-size: 36px;
+            font-weight: 700;
+            max-width: 414px;
+        }
+        .read{
+            width: 194px;
+            height: 56px;
+            margin-top: 32px;
+            background-color: #FFD050;
+            border: none;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .join-text{
+            font-size: 16px;
+            color: #6D6E76;
+            max-width: 405px;
+            margin-top: 16px;
+        }
+    }
+}
 @media screen and (max-width: 945px) {
     .post{
         flex-direction: column;
@@ -332,6 +535,20 @@
         }
         .item{
             width: 290px;
+        }
+    }
+    .autor{
+        .autor-cards{
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .autor-card{
+            width: 47%;
+        }
+        .styles{
+            .style-logo{
+                gap: 30px;
+            }
         }
     }
 }
@@ -362,13 +579,44 @@
         }
         .start-right{
             width: 100%;
+            height: 100%;
             justify-content: start;
+        }
+    }
+    .autor{
+        .testimonials{
+            flex-direction: column;
+            gap: 30px;
+            padding: 50px 40px;
+            .test-right{
+                padding: 0;
+                margin-left: 0;
+            }
+            .test-left{
+                width: 100%;
+            }
+            .test-left::after{
+                position: relative;
+                height: 1px;
+                margin-top: 20px;
+                width: 100%;
+                left: 0;
+            }
         }
     }
 }
 @media screen and (max-width: 576px) {
     .category{
         .item{
+            width: 100%;
+        }
+    }
+    .autor{
+        .autor-cards{
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .autor-card{
             width: 100%;
         }
     }
