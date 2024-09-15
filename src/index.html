@@ -3,7 +3,7 @@
   @@include('html/head.html',{ "title":"Главная", "description":"Описание" })
 
   <body>
-    <div class="wrapper">
+    <div class="wrapper none" id="w1">
       @@include('html/header.html',{})
       <main class="page">
         <div class="hero">
@@ -223,7 +223,7 @@
       </main>
       @@include('html/footer.html',{})
     </div>
-    <div class="wrapper none">
+    <div class="wrapper" id="w2">
       @@include('html/header.html',{})
       <main class="page">
         <div class="hero">

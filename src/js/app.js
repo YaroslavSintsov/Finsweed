@@ -14,3 +14,15 @@ let html = document.getElementById('html')
 menu.onclick = function(){
     html.classList.toggle('menu-open')
 }
+let wrapp1 = document.getElementById('w1')
+let wrapp2 = document.getElementById('w2')
+let li1 = document.getElementById('h')
+let li2 = document.getElementById('b')
+li1.onclick = function(){
+    wrapp2.classList.add('none')
+    wrapp1.classList.remove('none')
+}
+li2.onclick = function(){
+    wrapp1.classList.add('none')
+    wrapp2.classList.remove('none')
+}
