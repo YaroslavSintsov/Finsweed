@@ -267,6 +267,87 @@
         letter-spacing: 3px;
     }
 }
+.posts{
+    display: flex;
+    flex-direction: column;
+    margin-top: 64px;
+    .up-post{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .card{
+        margin-top: 64px;
+    }
+    .post-img{
+        height: 320px;
+    }
+    .tema{
+        font-size: 16px;
+        font-weight: 600;
+        color: #592EA9;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    .card{
+        gap: 32px;
+        align-items: center;
+        display: flex;
+    }
+    .text-card{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    .post-title{
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 1.4px;
+    }
+    .post-text{
+        font-size: 16px;
+        line-height: 1.3;
+        letter-spacing: 0.5px;
+        color: #6D6E76;
+    }
+    .up-post::after{
+        height: 0.1px;
+        width: 100%;
+        background-color: #6D6E76;
+        content: '';
+    }
+    .title{
+        font-size: 48px;
+        font-weight: 700;
+    }
+}
+.join{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 128px;
+    .join-title{
+        font-size: 36px;
+        font-weight: 700;
+        max-width: 414px;
+    }
+    .read{
+        width: 194px;
+        height: 56px;
+        margin-top: 32px;
+        background-color: #FFD050;
+        border: none;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .join-text{
+        font-size: 16px;
+        color: #6D6E76;
+        max-width: 405px;
+        margin-top: 16px;
+    }
+}
 .category{
     margin-top: 128px;
     display: flex;
@@ -360,6 +441,7 @@
         color: #6D6E76;
     }
 }
+
 .autor{
     display: flex;
     width: 100%;
@@ -615,6 +697,16 @@
     .category{
         .item{
             width: 36%;
+        }
+    }
+    .posts{
+        .card{
+            flex-direction: column;
+            align-items: start;
+        }
+        .post-img{
+            width: 100%;
+            height: 100%;
         }
     }
     .start{
