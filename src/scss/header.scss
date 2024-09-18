@@ -74,7 +74,7 @@
 .menu-btn{
 	display: none;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 630px) {
 	.links{
 		width: 100%;
 		position: fixed;
@@ -89,7 +89,8 @@
 		justify-content: start;
 		align-items: start;
 		transition: all 0.5s ease;
-		z-index: 1;
+		z-index: 100;
+		overflow: auto;
 	}
 	.menu-btn{
 		margin-top: 20px;
@@ -165,8 +166,14 @@
 	.menu-open .header__container{
 		padding: 0;
 	}
-	.menu-open.header{
+	.menu-open body{
+		overflow-y: hidden;
+		transition: all 0.5s ease;
+	}
+	.menu-open .header{
 		padding-top: 0;
+		padding: 0 !important;
+		transition: all 0.5s ease;
 	}
 	.subscride{
 		width: 200px;
