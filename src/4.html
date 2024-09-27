@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html',{ "title":"Главная", "description":"Описание" })
+
+  <body>
+    <div class="wrapper" id="w5">
+      @@include('html/header.html',{})
+      <main class="page">
+        <div class="page__container">
+          <div class="join">
+            <p class="tema">Contact us</p>
+            <p class="join-title">Let’s Start a Conversation</p>
+            <p class="join-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+            </p>
+          </div>
+          <div class="frame">
+            <div class="frame-up">
+              <div class="frame-left up-parts">
+                <div class="frame-light">Working hours</div>
+                <p class="text-bold">Monday To Friday <br> 9:00 AM to 8:00 PM </p>
+                <p class="down">Our Support Team is available 24/7</p>
+              </div>
+              <div class="frame-right up-parts">
+                <p class="frame-light">Contact Us</p>
+                <p class="text-bold">020 7993 2905</p>
+                <p class="down">hello@finsweet.com</p>
+              </div>
+            </div>
+            <div class="frame-botom">
+              <input placeholder="Full Name" type="text" class="input">
+              <input placeholder="Your Email" type="email" class="input">
+              <input placeholder="Query Related" type="tel" class="input">
+              <textarea name="message" class="input" placeholder="Message" rows="5"></textarea>
+              <button class="send">Send Message</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      @@include('html/footer.html',{})
+    </div>
+    @@include('html/popup.html',{}) @@include('html/js.html',{})
+  </body>
+</html>

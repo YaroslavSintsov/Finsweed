@@ -24,6 +24,8 @@
 }
 .link{
 	margin-right: 24px;
+	text-decoration: none;
+	color: #fff;
 }
 .link:nth-child(4){
 	margin-right: 32px;
@@ -89,7 +91,7 @@
 		justify-content: start;
 		align-items: start;
 		transition: all 0.5s ease;
-		z-index: 1;
+		z-index: 100;
 	}
 	.menu-btn{
 		margin-top: 20px;
